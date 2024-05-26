@@ -7,7 +7,7 @@ const Header = () => {
         <p>
           Choose from a diverse menu featuring a delectable array of dishes
           crafted with the finest ingredients an culinary expertise. Our Mission
-          to satisfy your cravings and elevate your dinning experience, one
+          is to satisfy your cravings and elevate your dinning experience, one
           delicious meal a time.
         </p>
         <button>View Menu</button>
