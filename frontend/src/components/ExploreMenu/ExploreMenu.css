@@ -14,35 +14,6 @@
   color: #808080;
 }
 
-.explore-menu-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  gap: 30px;
-  margin: 20px 0;
-  overflow-x: scroll;
-}
-
-.explore-menu-list::-webkit-scrollbar {
-  display: none;
-}
-
-.explore-menu-list-item img {
-  width: 7.5vw;
-  min-width: 80px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.explore-menu-list-item p {
-  margin-top: 10px;
-  color: #747474;
-  cursor: pointer;
-  font-size: max(1.4vw, 16px);
-}
-
 .explore-menu hr {
   margin: 10px 0;
   height: 2px;

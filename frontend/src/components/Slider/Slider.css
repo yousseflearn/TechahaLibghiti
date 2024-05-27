@@ -1,0 +1,33 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin: 20px 0;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.swiper-slide img {
+  width: 7.5vw;
+  min-width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.swiper-slide p {
+  margin-top: 10px;
+  color: #747474;
+  cursor: pointer;
+  font-size: max(1.4vw, 16px);
+}
