@@ -12,6 +12,7 @@ import menu_5 from './menu_5.png';
 import menu_6 from './menu_6.png';
 import menu_7 from './menu_7.png';
 import menu_8 from './menu_8.png';
+import menu_9 from './menu_9.png';
 
 import food_1 from './food_1.png';
 import food_2 from './food_2.png';
@@ -120,8 +121,8 @@ export const menu_list = [
     menu_image: menu_8,
   },
   {
-    menu_name: 'Cake',
-    menu_image: menu_5,
+    menu_name: 'Juice',
+    menu_image: menu_9,
   },
 ];
 

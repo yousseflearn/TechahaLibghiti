@@ -1,9 +1,7 @@
 import './ExploreMenu.css';
 import Slider from '../Slider/Slider';
-import { useState } from 'react';
 
-const ExploreMenu = () => {
-  const [category, setCategory] = useState('All');
+const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="explore-menu" id="explore-menu">
       <h1>Explore our menu</h1>
