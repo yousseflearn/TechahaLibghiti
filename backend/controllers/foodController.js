@@ -13,10 +13,21 @@ const addFood = async (req, res) => {
   });
   try {
     await food.save();
-    res.json({ Status: true, message: 'food added successfully!' });
+    res.json({ Success: true, message: 'food added successfully!' });
   } catch (error) {
     console.log(error);
-    res.json({ Status: false, message: 'Error' });
+    res.json({ Success: false, message: 'Error' });
   }
 };
-export { addFood };
+// add foodList
+const listFood = async (req, res) => {
+  try {
+    const foods = await foodModel.find({});
+    res.json({ Success: true, data: foods });
+  } catch (error) {
+    console.log(error);
+    res.json({ Success: false, message: 'Error' });
+  }
+};
+
+export { addFood, listFood };

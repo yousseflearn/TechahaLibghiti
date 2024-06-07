@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import { connectDB } from './config/db.js';
 import foodRouter from './routes/foodRoute.js';
-import { addFood } from './controllers/foodController.js';
+import { addFood, listFood } from './controllers/foodController.js';
 import multer from 'multer';
 
 // app config
@@ -39,6 +39,8 @@ const upload = multer({ storage: storage });
 
 //Post method route
 foodRouter.post('/add', upload.single('image'), addFood);
+// GET method route
+foodRouter.get('/list', listFood);
 
 app.listen(port, () => {
   console.log(`Server started at  http://localhost:${port}`);
