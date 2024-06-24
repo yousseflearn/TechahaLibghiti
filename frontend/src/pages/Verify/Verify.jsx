@@ -20,7 +20,7 @@ const Verify = () => {
     console.log(Success, orderId);
     console.log(response.data.Success);
     if (response.data.Success) {
-      navigate('/myorders');
+      navigate('/myOrders');
     } else {
       navigate('/');
     }
